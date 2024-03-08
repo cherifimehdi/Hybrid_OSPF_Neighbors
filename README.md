@@ -1,2 +1,1 @@
-# Hybrid_OSPF_Neighbors
-This repository contains an hybrid script that allow you to retrieve the state of OSPF neighbors for both IPv4 (By default), and IPv6
+This repository contains a hybrid script that allows you to retrieve OSPF neighbors state for IPv4 (default) and/or IPv6.
