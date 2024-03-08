@@ -1,11 +1,11 @@
 def hybrid_neighbors(device, ip='ipv4'):
-    # Connect to R1 via SSH
+    # Connect to the device via SSH
     net_connect = ConnectHandler(**device)
-    # Retrieve the parsed result of "show ip ospf neighbor" command
+    # Retrieve the result of "show ip/ipv6 ospf neighbor" command
     output = net_connect.send_command(f"show {'ipv6' if ip!='ipv4' else 'ip'} ospf neighbor")
     # Display the result
     print(output)
-    # End the SSH session for R1
+    # End the SSH session for the device
     net_connect.disconnect()
     return print(f"This is {ip} data")
 
